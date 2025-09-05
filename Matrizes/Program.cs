@@ -9,7 +9,6 @@ int[,] matriz = new int[quantidadeLinhas, quantidadeColunas];
 Console.WriteLine("Digite o conteúdo da matriz: ");
 for (int linha = 0; linha < quantidadeLinhas; linha++)
 {
-
   string[] conteudoLinha = Console.ReadLine().Split(" ");
 
   for (int coluna = 0; coluna < quantidadeColunas; coluna++)
@@ -20,7 +19,6 @@ for (int linha = 0; linha < quantidadeLinhas; linha++)
 
 Console.Write("Digite o número que deseja procurar: ");
 int numeroPesquisa = int.Parse(Console.ReadLine());
-
 
 for (int linha = 0; linha < quantidadeLinhas; linha++)
 {
@@ -33,11 +31,10 @@ for (int linha = 0; linha < quantidadeLinhas; linha++)
     
     if (matriz[linha, coluna] == numeroPesquisa)
     {
-
-      if (linha > 0) up = matriz[linha - 1, coluna];
-      if (linha != quantidadeLinhas - 1) down = matriz[linha + 1, coluna];
-      if (coluna != 0) left = matriz[linha, coluna - 1];
-      if (coluna != (quantidadeColunas - 1)) right = matriz[linha, coluna + 1];
+      if (linha > 0) up = matriz[linha - 1, coluna];// Se NÃO for a 1ª linha, preenche o up
+      if (linha != quantidadeLinhas - 1) down = matriz[linha + 1, coluna];// Se NÃO for a última linha, preenche o down
+      if (coluna != 0) left = matriz[linha, coluna - 1];// Se NÃO for a 1ª coluna, preeenche o left
+      if (coluna != (quantidadeColunas - 1)) right = matriz[linha, coluna + 1];// Se NÃO for última coluna, preenche o right
 
       Console.WriteLine($"Position ({linha},{coluna}):");
 
