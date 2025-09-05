@@ -45,3 +45,9 @@ Down: 19
   ```bash
   dotnet run
   ```
+
+  ## 👨‍🏫 Resolução do Professor
+
+  Você pode encontrar a resolução proposta pelo professor do curso no seguinte link:
+
+  - [Resolução do Problema](https://github.com/acenelio/matrix2-csharp/blob/master/Course/Program.cs)
