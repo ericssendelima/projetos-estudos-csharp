@@ -17,7 +17,7 @@ Cada pasta neste repositório corresponde a um projeto ou exercício prático de
 
 1. Clone o repositório:
   ```bash
-  git clone https://github.com/seu-usuario/projetos-estudos-csharp.git
+  git clone https://github.com/ericssendelima/projetos-estudos-csharp.git
   ```
 2. Navegue até a pasta do projeto desejado.
 3. Abra a solução (`.sln`) no Visual Studio ou na sua IDE de preferência.
