@@ -30,12 +30,12 @@ O diagrama abaixo representa a estrutura de classes do projeto, mostrando a rela
 
 1.  **Clone o repositório:**
   ```bash
-  git clone <URL_DO_REPOSITORIO>
+  git clone https://github.com/ericssendelima/projetos-estudos-csharp.git
   ```
 
 2.  **Navegue até a pasta do projeto:**
   ```bash
-  cd WorkerContracts
+  cd Composicoes-Enums/WorkerContracts
   ```
 
 3.  **Execute a aplicação:**
