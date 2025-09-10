@@ -2,9 +2,9 @@ namespace OrderSystem.Enums
 {
   public enum OrderStatus
   {
-    PendingPayment,
-    Processing,
-    Shipped,
-    Delivered
+    PENDINGPAYMENT,
+    PROCESSING,
+    SHIPPED,
+    DELIVERED
   }
 }

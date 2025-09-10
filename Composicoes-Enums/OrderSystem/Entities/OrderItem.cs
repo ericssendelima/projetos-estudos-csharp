@@ -10,5 +10,10 @@ namespace OrderSystem.Entities
     public int Quantity => _quantity;
     public Product Product => _product;
     public double Price => _price;
+
+    public override string ToString()
+    {
+      return $"{Product.Name}, ${Price:0.00}, Quantity: {Quantity}, Subtotal: ${(Price*Quantity):0.00}";
+    }
   }
 }

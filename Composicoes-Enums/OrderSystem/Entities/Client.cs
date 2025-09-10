@@ -6,9 +6,13 @@ namespace OrderSystem.Entities
     private readonly string _email = email;
     private readonly DateTime _birthDate = birthDate;
 
-    public string Name => _name;
-    public string Email => _email;
-    public DateTime BirthDate => _birthDate;
+    private string Name => _name;
+    private string Email => _email;
+    private DateTime BirthDate => _birthDate;
 
+    public override string ToString()
+    {
+      return $"{Name} ({BirthDate.ToString("dd/MM/yyyy")}) - {Email}";
+    }
   }
 }
