@@ -7,9 +7,13 @@ namespace WorkerContracts.Entities
     private readonly int _hours = hours;
 
     private double ValuePerHours => _valuePerHours;
+
+    private int Hours => _hours;
+
+    public DateTime Date => _date;
     public double TotalValue()
     {
-      return ValuePerHours;
+      return ValuePerHours * Hours;
     }
   }
 }
