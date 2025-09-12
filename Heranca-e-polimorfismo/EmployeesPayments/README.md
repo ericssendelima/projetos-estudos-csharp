@@ -15,6 +15,40 @@ Fazer um programa para ler os dados de N funcionários (N fornecido pelo usuári
 
 ![Diagrama de Classes](ClassDiagram.png)
 
+## Exemplo de Uso
+
+A seguir, um exemplo da execução do programa, mostrando a entrada de dados e a saída gerada.
+
+**Entrada:**
+```
+Enter the number of employees: 3
+Employee #1 data:
+Outsourced (y/n)? y
+Name: Alex
+Hours: 100
+Value per hour: 50.00
+Additional charge: 200.00
+Employee #2 data:
+Outsourced (y/n)? n
+Name: Bob
+Hours: 100
+Value per hour: 30.00
+Employee #3 data:
+Outsourced (y/n)? y
+Name: Maria
+Hours: 60
+Value per hour: 50.00
+Additional charge: 500.00
+```
+
+**Saída:**
+```
+PAYMENTS:
+Alex - $ 5220.00
+Bob - $ 3000.00
+Maria - $ 3550.00
+```
+
 ## Como Rodar o Projeto
 
 1.  Clone este repositório:
