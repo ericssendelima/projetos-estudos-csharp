@@ -56,7 +56,8 @@ Temporary Items
 *.icloud
 
 ### VisualStudioCode ###
-.vscode/*
+# Ignore workspace settings
+.vscode/
 
 
 # Local History for Visual Studio Code
