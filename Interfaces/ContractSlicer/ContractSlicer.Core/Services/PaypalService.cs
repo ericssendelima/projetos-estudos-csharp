@@ -1,6 +1,6 @@
-using ContractSlicer.Services.Interfaces;
+using ContractSlicer.Core.Services.Interfaces;
 
-namespace ContractSlicer.Services
+namespace ContractSlicer.Core.Services
 {
   public class PaypalService : IOnlinePaymentService
   {

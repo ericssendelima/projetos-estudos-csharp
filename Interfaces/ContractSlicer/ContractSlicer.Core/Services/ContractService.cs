@@ -1,7 +1,7 @@
-using ContractSlicer.Entities;
-using ContractSlicer.Services.Interfaces;
+using ContractSlicer.Core.Entities;
+using ContractSlicer.Core.Services.Interfaces;
 
-namespace ContractSlicer.Services
+namespace ContractSlicer.Core.Services
 {
   public class ContractService(IOnlinePaymentService onlinePaymentService)
   {

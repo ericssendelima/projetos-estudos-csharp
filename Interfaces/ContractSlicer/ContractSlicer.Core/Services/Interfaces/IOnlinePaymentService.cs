@@ -1,4 +1,4 @@
-namespace ContractSlicer.Services.Interfaces
+namespace ContractSlicer.Core.Services.Interfaces
 {
   public interface IOnlinePaymentService
   {

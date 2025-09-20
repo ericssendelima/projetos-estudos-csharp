@@ -1,5 +1,5 @@
-﻿using ContractSlicer.Entities;
-using ContractSlicer.Services;
+﻿using ContractSlicer.Core.Entities;
+using ContractSlicer.Core.Services;
 
 Console.WriteLine("Enter contract data");
 Console.Write("Number: ");

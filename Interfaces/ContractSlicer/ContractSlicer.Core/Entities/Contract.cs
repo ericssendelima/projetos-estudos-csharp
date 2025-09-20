@@ -1,9 +1,4 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
-namespace ContractSlicer.Entities
+namespace ContractSlicer.Core.Entities
 {
   public class Contract(int number, DateTime date, double totalValue)
   {
