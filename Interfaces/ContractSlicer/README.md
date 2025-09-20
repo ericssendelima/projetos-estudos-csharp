@@ -1,3 +1,4 @@
+[![.NET Build and Test](https://github.com/ericssendelima/projetos-estudos-csharp/actions/workflows/dotnet.yml/badge.svg)](https://github.com/ericssendelima/projetos-estudos-csharp/actions/workflows/dotnet.yml)
 
 # ContractSlicer
 
@@ -28,14 +29,39 @@ Installments:
 ## Como Executar
 
 1.  Clone o repositório para sua máquina local.
-2.  Navegue até o diretório do projeto via terminal.
+2.  Navegue até o diretório `Interfaces/ContractSlicer` via terminal.
 3.  Execute o seguinte comando para compilar e rodar a aplicação:
 
   ```bash
-  dotnet run
+  dotnet run --project ContractSlicer.ConsoleApp
   ```
 
 4.  Siga as instruções no console para inserir os dados do contrato.
+
+## Estrutura de Pastas
+
+O projeto está organizado da seguinte forma a partir do diretório `Interfaces/ContractSlicer`:
+
+```
+.
+├── ContractSlicer.ConsoleApp/    # Projeto principal da aplicação (Console)
+├── ContractSlicer.Core/          # Biblioteca com a lógica de negócio
+│   ├── Entities/                 # Classes de domínio (Contract, Installment)
+│   └── Services/                 # Lógica de negócio e serviços (ContractService, /Interfaces/IOnlinePaymentService, PaypalService)
+├── ContractSlicer.Core.Tests/    # Projeto de testes unitários para a camada Core
+├── assets/                       # Imagens e outros recursos
+└── ContractSlicer.sln            # Arquivo da solução .NET
+```
+
+## Testes
+
+Os testes unitários foram desenvolvidos para garantir a qualidade da lógica de negócio principal, focando no `ContractService`. Os testes verificam se o cálculo das parcelas, incluindo a aplicação dos juros e taxas do serviço de pagamento, está sendo realizado conforme o esperado.
+
+Para executar os testes, navegue até o diretório `Interfaces/ContractSlicer` (a raiz da solução) e execute o seguinte comando:
+
+```bash
+dotnet test
+```
 
 ## Diagramas de Classe
 
